@@ -3,14 +3,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+struct Person {
+  char name[50];
+  int age;
+};
+
 int main() {
-  int a;
-  int *d;
+  struct Person p1;
 
-  a = 10;
+  printf("1st age\n");
+  scanf("%d", &p1.age);
 
-  d = &a;
-  printf("value d :%d \n", *d);
+  printf("p1 age %d\n", p1.age);
 
   return 0;
 }
