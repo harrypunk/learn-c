@@ -7,5 +7,3 @@ blah.o: app.c
 clean:
 	rm blah.o blah
 
-some_file:
-	echo "Some file text"
