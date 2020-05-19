@@ -9,6 +9,7 @@ ex1:
 app.o:
 	cc -c app.c
 
+.PHONY: clean
 clean:
-	rm build/*
-	rm $(flist)
+	-rm build/*
+	-rm $(flist)
