@@ -1,9 +1,5 @@
-blah: blah.o
-	cc blah.o -o blah
-
-blah.o: app.c
-	cc -c app.c -o blah.o
+ex1:
+	cc app.c -o build/app
 
 clean:
-	rm blah.o blah
-
+	rm build/*
