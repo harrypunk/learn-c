@@ -10,6 +10,10 @@ app.o:
 	cc -c app.c
 
 .PHONY: clean
-clean:
+clean: cleanbuild cleanobj
+
+cleanbuild:
 	-rm build/*
+
+cleanobj:
 	-rm $(flist)
