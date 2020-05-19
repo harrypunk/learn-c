@@ -3,6 +3,9 @@ flist = app.o
 showsome:
 	echo "default make"
 
+showenv:
+	echo ${M1}
+
 ex1:
 	cc ${flist} -o build/app
 
